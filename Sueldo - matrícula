@@ -1,0 +1,20 @@
+nameA = []
+STL = []
+vendedor = input("hay algún vender? responder si o no: ")
+while vendedor.lower() == "si":
+  name = input("menciona el nombre del vendedor: ")
+  salario = float(input("salario base: "))
+  totalv = float(input("total de ventas: "))
+  nameA.append(name)
+  comision = 0
+  if totalv < 3500:
+    comision = 0.007
+  elif totalv >= 3500 and totalv <=7000:
+    comision = 0.1
+  else:
+    comision = 0.15
+  STL.append(salario + (salario * comision))
+  vendedor = input("hay algún vendedor? responder con si o no: ")
+  for X in nameA:
+    print("el vendedor" + x + "tiene un sueldo total de" + str(STL[count]))
+    count +=1
